@@ -1,0 +1,14 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.bindu.applinktest",
+      "sha256_cert_fingerprints": [
+        
+"4B:0C:16:98:4F:65:36:05:05:3B:24:90:96:6F:DD:4A:A3:67:FA:44:2B:F9:90:3E:56:61:9B:62:A1:B5:B7:3C"
+      ]
+    }
+  }
+ 
+]
