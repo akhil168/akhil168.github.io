@@ -1,10 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head><title>Open App</title></head>
-  <body style="text-align: center; padding-top: 50px;">
-    <h2>Open App with Referral</h2>
-    <a href="intent://product?referralCode=XYZ123#Intent;scheme=https;package=com.bindu.applinktest;S.browser_fallback_url=https://akhil168.github.io/index.html;end;">
-      <button style="padding: 12px 24px; font-size: 16px;">Open App</button>
-    </a>
-  </body>
+<head>
+  <title>Open App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { text-align: center; padding-top: 50px; font-family: sans-serif; }
+    button {
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2>Open App with Referral</h2>
+  <p>If you have the app installed, it will open. Otherwise, you'll be redirected to install it.</p>
+  <button onclick="openApp()">Open App</button>
+
+  <script>
+    function openApp() {
+      const link = "intent://product?referralCode=XYZ123#Intent;scheme=https;package=com.your.app.package;S.browser_fallback_url=https://akhil168.github.io/install.html;end;";
+      window.location.href = link;
+    }
+  </script>
+</body>
 </html>
